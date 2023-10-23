@@ -1,0 +1,349 @@
+mongosh <ip>
+
+use ASAS
+
+db.createCollection("students", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["firstName", "lastName", "year", "program", "email"],
+            properties: {
+                firstName: {
+                    bsonType: "string",
+                    description: "student's first name - Required."
+                },
+                lastName: {
+                    bsonType: "string",
+                    description: "student's last name - Required."
+                },
+                year: {
+                    bsonType: "int",
+                    description: "student's current year - Required."
+                },
+                program: {
+                    bsonType: "string",
+                    description: "student's degree program - Required."
+                },
+                email: {
+                    bsonType: "string",
+                    description: "student's email address - Required."
+                },
+                acadHist: {
+                    bsonType: "array",
+                    description: "student's academic history - Optional. An array of objects.",
+                    items: {
+                        bsonType: "object",
+                        properties: {
+                            subjectCode: {
+                                bsonType: "string",
+                                description: "subject code."
+                            },
+                            subjectDesc: {
+                                bsonType: "string",
+                                description: "subject description."
+                            },
+                            grade: {
+                                bsonType: "string",
+                                description: "Must be a valid grade",
+                                enum: ["A", "B+", "B", "C+", "C", "D", "F"]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+})
+
+db.createCollection("instructors", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["firstName", "lastName", "email", "department", "school"],
+            properties: {
+                firstName: {
+                    bsonType: "string",
+                    description: "Instructor's first name."
+                },
+                lastName: {
+                    bsonType: "string",
+                    description: "Instructor's last name."
+                },
+                email: {
+                    bsonType: "string",
+                    description: "Instructor's email."
+                },
+                department: {
+                    bsonType: "string",
+                    description: "Instructor's department."
+                },
+                school: {
+                    bsonType: "string",
+                    description: "Instructor's school."
+                },
+                classesTaught: {
+                    bsonType: "array",
+                    description: "Classes taught by the instructor. An array of objects.",
+                    items: {
+                    bsonType: "object",
+                    properties: {
+                        section: {
+                            bsonType: "string",
+                            description: "Section."
+                        },
+                        timeslot: {
+                            bsonType: "string",
+                            description: "Timeslot."
+                        },
+                        room: {
+                            bsonType: "string",
+                            description: "Room."
+                        }
+                    }
+                    }
+                },
+                reviews: {
+                    bsonType: "array",
+                    description: "Instructor's reviews. An array of objects.",
+                    items: {
+                    bsonType: "object",
+                    properties: {
+                        review: {
+                            bsonType: "string",
+                            description: "Review."
+                        },
+                        rating: {
+                            bsonType: "int",
+                            description: "Rating."
+                        }
+                    }
+                    }
+                },
+                averageRating: {
+                    bsonType: "int",
+                    description: "Average rating of the instructor."
+                }
+            }
+        }
+    }
+})
+
+db.createCollection("courses", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["sections", "prerequisites", "department", "school"],
+            properties: {
+                sections: {
+                    bsonType: "array",
+                    description: "Array of course sections. Each section is an object.",
+                    items: {
+                    bsonType: "object",
+                    properties: {
+                        instructor: {
+                            bsonType: "string",
+                            description: "Instructor of the section."
+                        },
+                        room: {
+                            bsonType: "string",
+                            description: "Room of the section."
+                        },
+                        sectionName: {
+                            bsonType: "string",
+                            description: "Name of the section."
+                        },
+                        timeslot: {
+                            bsonType: "string",
+                            description: "Timeslot of the section."
+                        }
+                    }
+                    }
+                },
+                reviews: {
+                    bsonType: "array",
+                    description: "Array of course reviews. Each review is an object.",
+                    items: {
+                    bsonType: "object",
+                    properties: {
+                        review: {
+                            bsonType: "string",
+                            description: "Review of the course."
+                        },
+                        rating: {
+                            bsonType: "int",
+                            description: "Rating of the course."
+                        }
+                    }
+                    }
+                },
+                prerequisites: {
+                    bsonType: "array",
+                    description: "Array of course prerequisites. Each prerequisite is a string."
+                },
+                department: {
+                    bsonType: "string",
+                    description: "Department of the course."
+                },
+                school: {
+                    bsonType: "string",
+                    description: "School of the course."
+                },
+                averageRating: {
+                    bsonType: "int",
+                    description: "Average rating of the course rounded off."
+                }
+            }
+        }
+    }
+})
+
+db.createCollection("locations", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["buildingName", "latitude", "longitude"],
+            properties: {
+                buildingName: {
+                    bsonType: "string",
+                    description: "Name of the building."
+                },
+                departments: {
+                    bsonType: "array",
+                    description: "Array of departments within the location.",
+                    items: {
+                        bsonType: "object",
+                        properties: {
+                            departmentName: {
+                                bsonType: "string",
+                                description: "Name of the department."
+                            },
+                            departmentChair: {
+                                bsonType: "string",
+                                description: "Name of the department chair."
+                            }
+                        }
+                    }
+                },
+                classrooms: {
+                    bsonType: "array",
+                    description: "Array of classroom names (strings)."
+                },
+                laboratories: {
+                    bsonType: "array",
+                    description: "Array of laboratory names (strings)."
+                },
+                otherOffices: {
+                    bsonType: "array",
+                    description: "Array of other office names (strings)."
+                },
+                latitude: {
+                    bsonType: "double",
+                    description: "Latitude of the location."
+                },
+                longitude: {
+                    bsonType: "double",
+                    description: "Longitude of the location."
+                }
+            }
+        }
+    }
+})
+
+
+
+//test data
+
+db.students.insertOne({
+   firstName: "angelo",
+   lastName: "lumba",
+   year: 4,
+   program: "BSMS CS",
+   email: "swailem.lumba@obf.ateneo.edu",
+   acadHist: [ 
+    {
+        subjectCode: "CSCI 20",
+        subjectDesc: "Good Sub",
+        grade: "A"
+    },
+    {
+        subjectCode: "CSCI 21",
+        subjectDesc: "Good Sub",
+        grade: "B+"
+    }
+   ]
+})
+
+db.instructors.insertOne({
+   firstName: "test",
+   lastName: "professor",
+   email: "swailem.lumba@obf.ateneo.edu",
+   department: "DISCS",
+   school: "SOSE",
+   classesTaught: [ 
+    {
+        section: "CSCI 20 H1",
+        timeslot: "MWF 10:00 AM - 11:30 AM",
+        room: "CTC 212"
+    },
+    {
+        section: "CSCI 20 H4",
+        timeslot: "MWF 10:00 AM - 11:30 AM",
+        room: "CTC 212"
+    }
+   ],
+    reviews: [
+      {
+         review: "Great course with excellent content.",
+         rating: 10
+      },
+      {
+         review: "The instructor was very engaging.",
+         rating: 10
+      }
+   ]
+})
+
+db.courses.insertOne({
+   sections: [
+      {
+         instructor: "Professor 23",
+         room: "Room 101",
+         sectionName: "CS101",
+         timeslot: "MWF 10:00 AM - 11:30 AM"
+      },
+      {
+         instructor: "Professor 112",
+         room: "Room 201",
+         sectionName: "CS102",
+         timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+   ],
+   reviews: [
+      {
+         review: "Great course with excellent content.",
+         rating: 10
+      },
+      {
+         review: "The instructor was very engaging.",
+         rating: 10
+      }
+   ],
+   prerequisites: ["CS100", "MATH101"],
+   department: "Computer Science",
+   school: "School of Engineering",
+   averageRating: 10
+})
+
+
+db.locations.insertOne({
+    buildingName: "Science Building",
+    departments: [
+        { departmentName: "Physics", departmentChair: "Dr. Smith" },
+        { departmentName: "Chemistry", departmentChair: "Dr. Johnson" }
+    ],
+    classrooms: ["Room 101", "Room 102", "Room 103"],
+    laboratories: ["Lab 201", "Lab 202"],
+    otherOffices: ["Admin Office", "IT Support Office"],
+    latitude: 37.7749,  // Replace with the actual latitude
+    longitude: -122.4194  // Replace with the actual longitude
+})
