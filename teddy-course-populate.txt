@@ -1,0 +1,131 @@
+
+db.courses.insertMany([
+  {
+   name: "CS112"
+   sections: [
+      {
+         instructor: "Professor 23",
+         room: "Room 107",
+         sectionName: "K",
+         timeslot: "MWF 10:00 AM - 11:30 AM"
+      },
+      {
+         instructor: "Professor 112",
+         room: "Room 205",
+         sectionName: "J2",
+         timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+   ],
+   reviews: [
+      {
+         review: "Great course with excellent content.",
+         rating: 10
+      },
+      {
+         review: "The instructor was very engaging.",
+         rating: 10
+      }
+   ],
+   prerequisites: ["CS222","CS123","MATH121"],
+   department: "Computer Science",
+   school: "School of Engineering",
+   averageRating: 10
+   },
+
+  {
+   name: "CS123"
+   sections: [
+      {
+         instructor: "Professor 45",
+         room: "Room 123",
+         sectionName: "L",
+         timeslot: "TTh 10:00 AM - 11:30 AM"
+      },
+      {
+         instructor: "Professor 78",
+         room: "Room 532",
+         sectionName: "Q",
+         timeslot: "S 1:00 PM - 4:30 PM"
+      }
+   ],
+   reviews: [
+      {
+         review: "Very engaging.",
+         rating: 8
+      },
+      {
+         review: "Hardest Subject Ever.",
+         rating: 5
+      }
+   ],
+   prerequisites: ["CS100", "MATH101"],
+   department: "Computer Science",
+   school: "School of Engineering",
+   averageRating: 10
+   },
+
+  {
+    name: "MATH101",
+    sections: [
+      {
+        instructor: "Professor 11",
+        room: "Room 102",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Professor 22",
+        room: "Room 201",
+        sectionName: "B",
+        timeslot: "TTh 11:00 AM - 12:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Challenging but rewarding.",
+        rating: 9
+      },
+      {
+        review: "The instructor was very helpful.",
+        rating: 9
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Mathematics",
+    school: "School of Sciences",
+    averageRating: 9
+  },
+
+  {
+    name: "PHYS100",
+    sections: [
+      {
+        instructor: "Professor 33",
+        room: "Room 301",
+        sectionName: "X",
+        timeslot: "MWF 1:00 PM - 2:30 PM"
+      },
+      {
+        instructor: "Professor 44",
+        room: "Room 401",
+        sectionName: "Y",
+        timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Fascinating subject!",
+        rating: 8
+      },
+      {
+        review: "The labs were enjoyable.",
+        rating: 7
+      }
+    ],
+    prerequisites: ["MATH101"],
+    department: "Physics",
+    school: "School of Sciences",
+    averageRating: 7.5
+  }
+
+])

@@ -134,6 +134,10 @@ db.createCollection("courses", {
             bsonType: "object",
             required: ["sections", "prerequisites", "department", "school"],
             properties: {
+		name: {
+                    bsonType: "string",
+                    description: "Name of course. - Required."
+                },
                 sections: {
                     bsonType: "array",
                     description: "Array of course sections. Each section is an object.",
@@ -304,6 +308,7 @@ db.instructors.insertOne({
 })
 
 db.courses.insertOne({
+   name: "CS111"
    sections: [
       {
          instructor: "Professor 23",
