@@ -28,7 +28,7 @@ db.courses.insertMany([
    ],
    prerequisites: ["CS222","CS123","MATH121"],
    department: "Computer Science",
-   school: "School of Engineering",
+   school: "School of Sciences and Engineering",
    averageRating: 10
    },
 
@@ -60,7 +60,7 @@ db.courses.insertMany([
    ],
    prerequisites: ["CS100", "MATH101"],
    department: "Computer Science",
-   school: "School of Engineering",
+   school: "School of Sciences and Engineering",
    averageRating: 10
    },
 
@@ -92,7 +92,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Mathematics",
-    school: "School of Sciences",
+    school: "School of Sciences and Engineering",
     averageRating: 9
   },
 
@@ -124,8 +124,39 @@ db.courses.insertMany([
     ],
     prerequisites: ["MATH101"],
     department: "Physics",
-    school: "School of Sciences",
+    school: "School of Sciences and Engineering",
     averageRating: 7.5
-  }
+  },
+  {
+   name: "CS212"
+   sections: [
+      {
+         instructor: "Professor 57",
+         room: "Room 502",
+         sectionName: "Y2",
+         timeslot: "MWF 11:00 AM - 12:30 PM"
+      },
+      {
+         instructor: "Professor 2",
+         room: "Room 212",
+         sectionName: "P2",
+         timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+   ],
+   reviews: [
+      {
+         review: "A little challenging for my taste.",
+         rating: 6
+      },
+      {
+         review: "The lessons were hard but engaging.",
+         rating: 8
+      }
+   ],
+   prerequisites: ["CS222","MATH102","MATH121"],
+   department: "Computer Science",
+   school: "School of Sciences and Engineering",
+   averageRating: 10
+   }
 
 ])
