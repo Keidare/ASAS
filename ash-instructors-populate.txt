@@ -1,0 +1,154 @@
+db.courses.insertMany([
+    {
+        firstName: "Michael Edison",
+        lastName: "Legaspi",
+        email: "mlegaspi@ateneo.edu",
+        department: "DISCS",
+        school: "SOSE",
+        classesTaught: [
+            {
+                section: "CSCI 112 K",
+                timeslot: "TF 9:30 AM - 11:00 AM",
+                room: "CTC 107"
+            },
+            {
+                section: "CSCI 70 V",
+                timeslot: "W 6:00 PM - 9:00 PM",
+                room: "F 227"
+            }
+        ],
+        reviews: [
+            {
+                review: "Had him for CSCI 112. Great prof",
+                rating: 8
+            }
+        ]
+    },
+    {
+        firstName: "Artemio Lance",
+        lastName: "Dilag",
+        email: "adilag@ateneo.edu",
+        department: "Mathematics",
+        school: "SOSE",
+        classesTaught: [
+            {
+                section: "MATH 21 C",
+                timeslot: "MTh 11:00 AM - 12:30 PM",
+                room: "SEC-A 208A"
+            },
+            {
+                section: "MATH 60.2 M",
+                timeslot: "TF 12:30 PM - 2:00 PM",
+                room: "SEC-A 208A"
+            }
+        ],
+        reviews: [
+            {
+                review: "He was my professor for MATH 10 and he's super nice but he assigned us alot of work.",
+                rating: 7
+            }
+        ]
+    },
+    {
+        firstName: "Natalie Angela",
+        lastName: "Guevarra",
+        email: "nguevarra@ateneo.edu",
+        department: "English",
+        school: "SOH",
+        classesTaught: [
+            {
+                section: "ENGL 11 F",
+                timeslot: "MTh 3:30 PM - 5:00 PM",
+                room: "CTC 105"
+            }
+        ],
+        reviews: [
+            {
+                review: "Super passionate about teaching! A-able but be prepared for alot of reading and writing.",
+                rating: 9
+            },
+            {
+                review: "She was my prof for ENGL 12. She's really strict and the workload is too heavy.",
+                rating: 4
+            }
+        ]
+    },
+    {
+        firstName: "Gilbert",
+        lastName: "Arcilla",
+        email: "garcilla@ateneo.edu",
+        department: "Leadership and Strategy",
+        school: "JGSOM",
+        classesTaught: [
+            {
+                section: "LAS 50 G",
+                timeslot: "MTh 5:00 PM - 6:30 PM",
+                room: "SOM 211"
+            }
+        ],
+        reviews: [
+            {
+                review: "He's gonna grill you for orals but he's good at teaching",
+                rating: 7
+            },
+            {
+                review: "NO",
+                rating: 1
+            }
+        ]
+    }
+    {
+        firstName: "Evelyn Ann",
+        lastName: "Macasaet",
+        email: "emacasaet@ateneo.edu",
+        department: "Physics",
+        school: "SOSE",
+        classesTaught: [
+            {
+                section: "PHYS 23.11 X",
+                timeslot: "S 12:00 PM - 3:00 PM",
+                room: "F 106"
+            },
+            {
+                section: "PHYS 23.11 Y",
+                timeslot: "S 3:00 PM - 6:00 PM",
+                room: "F 106"
+            }
+        ],
+        reviews: [
+            {
+                review: "I took her class last sem. She explains things really well and the tests are challenging but not too difficult.",
+                rating: 10
+            }
+        ]
+    }
+    {
+        firstName: "Mateo Javier",
+        lastName: "Silva",
+        email: "msilva@ateneo.edu",
+        department: "History",
+        school: "SOSS",
+        classesTaught: [
+            {
+                section: "HISTO 11 K",
+                timeslot: "TF 9:30 AM - 11:00 AM",
+                room: "B 102"
+            },
+            {
+                section: "HISTO 11 M",
+                timeslot: "TF 12:30 PM - 2:00 PM",
+                room: "BEL 209"
+            }
+        ],
+        reviews: [
+            {
+                review: "He's very knowledgeable and considerate. Aable IMO.",
+                rating: 7
+            },
+            {
+                review: " his lectures and readings felt disjointed and a bit boring. also expect alot of writing and recitation. i'd avoid his class",
+                rating: 3
+            }
+        ]
+    }
+])
