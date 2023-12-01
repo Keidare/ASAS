@@ -1,16 +1,16 @@
 
 db.courses.insertMany([
   {
-   name: "CS112"
+   name: "CS112",
    sections: [
       {
-         instructor: "Professor 23",
+         instructor: "Hugo Simpson",
          room: "Room 107",
          sectionName: "K",
          timeslot: "MWF 10:00 AM - 11:30 AM"
       },
       {
-         instructor: "Professor 112",
+         instructor: "Juan Greene",
          room: "Room 205",
          sectionName: "J2",
          timeslot: "TTh 1:00 PM - 2:30 PM"
@@ -33,16 +33,16 @@ db.courses.insertMany([
    },
 
   {
-   name: "CS123"
+   name: "CS123",
    sections: [
       {
-         instructor: "Professor 45",
+         instructor: "Erma Zimmerman",
          room: "Room 123",
          sectionName: "L",
          timeslot: "TTh 10:00 AM - 11:30 AM"
       },
       {
-         instructor: "Professor 78",
+         instructor: "Whitney Duncan",
          room: "Room 532",
          sectionName: "Q",
          timeslot: "S 1:00 PM - 4:30 PM"
@@ -68,13 +68,13 @@ db.courses.insertMany([
     name: "MATH101",
     sections: [
       {
-        instructor: "Professor 11",
+        instructor: "Matthew Jimenez",
         room: "Room 102",
         sectionName: "A",
         timeslot: "MWF 9:00 AM - 10:30 AM"
       },
       {
-        instructor: "Professor 22",
+        instructor: "Brenda Rodriquez",
         room: "Room 201",
         sectionName: "B",
         timeslot: "TTh 11:00 AM - 12:30 PM"
@@ -100,13 +100,13 @@ db.courses.insertMany([
     name: "PHYS100",
     sections: [
       {
-        instructor: "Professor 33",
+        instructor: "Kristi Burgess",
         room: "Room 301",
         sectionName: "X",
         timeslot: "MWF 1:00 PM - 2:30 PM"
       },
       {
-        instructor: "Professor 44",
+        instructor: "Wilma Burton",
         room: "Room 401",
         sectionName: "Y",
         timeslot: "TTh 3:00 PM - 4:30 PM"
@@ -128,16 +128,16 @@ db.courses.insertMany([
     averageRating: 7.5
   },
   {
-   name: "CS212"
+   name: "CS212",
    sections: [
       {
-         instructor: "Professor 57",
+         instructor: "Yvonne Ellis",
          room: "Room 502",
          sectionName: "Y2",
          timeslot: "MWF 11:00 AM - 12:30 PM"
       },
       {
-         instructor: "Professor 2",
+         instructor: "Wilma Burton",
          room: "Room 212",
          sectionName: "P2",
          timeslot: "TTh 3:00 PM - 4:30 PM"
@@ -156,7 +156,988 @@ db.courses.insertMany([
    prerequisites: ["CS222","MATH102","MATH121"],
    department: "Computer Science",
    school: "School of Sciences and Engineering",
-   averageRating: 10
-   }
+   averageRating: 9
+   },
+  {
+   name: "CS212",
+   sections: [
+      {
+         instructor: "Yvonne Ellis",
+         room: "Room 202",
+         sectionName: "Y2",
+         timeslot: "MWF 11:00 AM - 12:30 PM"
+      },
+      {
+         instructor: "Wilma Burton",
+         room: "Room 112",
+         sectionName: "P2",
+         timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+   ],
+   reviews: [
+      {
+         review: "A little challenging for my taste.",
+         rating: 5
+      },
+      {
+         review: "The lessons were hard but engaging.",
+         rating: 8
+      }
+   ],
+   prerequisites: ["CS222","MATH102","MATH121"],
+   department: "Computer Science",
+   school: "School of Sciences and Engineering",
+   averageRating: 5
+   },
+  {
+   name: "CS303",
+   sections: [
+      {
+         instructor: "David Lee",
+         room:"Room 303",
+         sectionName: "Y3",
+         timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+         instructor: "Alice Johnson",
+         room:"Room 403",
+         sectionName: "P3",
+         timeslot: "TTh 4:00 PM - 5:30 PM"
+      }
+   ],
+  reviews: [
+      {
+        review: "An interesting approach to programming.",
+        rating: 8
+      },
+      {
+        review: "The lessons were informative.",
+        rating: 7
+      }
+   ],
+   prerequisites: ["CS212","MATH142","PHYS151"],
+   department: "Computer Science",
+   school: "School of Sciences and Engineering",
+   averageRating: 8
+   },
+  {
+   name: "CS303",
+   sections: [
+      {
+         instructor: "David Lee",
+         room:"Room 303",
+         sectionName: "Y3",
+         timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+         instructor: "Alice Johnson",
+         room:"Room 403",
+         sectionName: "P3",
+         timeslot: "TTh 4:00 PM - 5:30 PM"
+      }
+   ],
+  reviews: [
+      {
+        review: "An interesting approach to programming.",
+        rating: 8
+      },
+      {
+        review: "The lessons were informative.",
+        rating: 7
+      }
+   ],
+   prerequisites: ["CS212","MATH142","PHYS151"],
+   department: "Computer Science",
+   school: "School of Sciences and Engineering",
+   averageRating: 8
+   },
+  {
+   name: "CS113",
+   sections: [
+      {
+         instructor: "Johnathan Lee",
+         room:"Room 111",
+         sectionName: "Z",
+         timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+         instructor: "Joseph Johnson",
+         room:"Room 103",
+         sectionName: "P3",
+         timeslot: "TTh 4:00 PM - 5:30 PM"
+      }
+   ],
+  reviews: [
+      {
+        review: "An interesting approach to programming.",
+        rating: 8
+      },
+      {
+        review: "The lessons were informative.",
+        rating: 7
+      }
+   ],
+   prerequisites: ["CS212","MATH142","PHYS151"],
+   department: "Computer Science",
+   school: "School of Sciences and Engineering",
+   averageRating: 8
+   },
+  {
+   name: "CS117",
+   sections: [
+      {
+         instructor: "David Cruz",
+         room:"Room 303",
+         sectionName: "Y3",
+         timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+         instructor: "Alex Johnson",
+         room:"Room 403",
+         sectionName: "P3",
+         timeslot: "TTh 4:00 PM - 5:30 PM"
+      }
+   ],
+  reviews: [
+      {
+        review: "An interesting approach to programming.",
+        rating: 8
+      },
+      {
+        review: "The lessons were informative.",
+        rating: 7
+      }
+   ],
+   prerequisites: ["CS212","MATH142","PHYS151"],
+   department: "Computer Science",
+   school: "School of Sciences and Engineering",
+   averageRating: 8
+   },
+{
+   name: "ETH404",
+   sections: [
+      {
+         instructor: "Sam Brown",
+         room:"Room 444",
+         sectionName: "L4",
+         timeslot: "Th 1:00 PM - 2:30 PM"
+      }
+   ],
+  reviews: [
+      {
+        review: "Informative and thought-provoking.",
+        rating: 9
+      },
+      {
+        review: "The course allowed for lively discussion.",
+        rating: 8
+      }
+   ],
+   prerequisites: ["CS212","PHIL112"],
+   department: "Computer Science",
+   school: "School of Sciences and Engineering",
+   averageRating: 8.5
+    },
+  {
+   name: "CS412",
+   sections: [
+      {
+         instructor: "Lisa Green",
+         room:"Room 412",
+         sectionName: "B4",
+         timeslot: "MWF 9:00 AM - 10:30 AM"
+      }
+   ],
+  reviews: [
+      {
+        review: "Challenging yet engaging.",
+        rating: 9
+      },
+      {
+        review: "I learned a lot about cybersecurity.",
+        rating: 8
+      }
+   ],
+   prerequisites: ["CS212","MATH142"],
+   department: "Computer Science",
+   school: "School of Sciences and Engineering",
+   averageRating: 8.75
+    },
+
+   {
+   name: "CS523",
+   sections: [
+      {
+         instructor: "Michael Smith",
+         room:"Room 523",
+         sectionName: "X3",
+         timeslot: "Th 10:00 AM - 11:30 AM"
+      }
+   ],
+  reviews: [
+      {
+        review: "Intensive yet rewarding.",
+        rating: 9
+      },
+      {
+        review: "Loved the practical application of ML.",
+        rating: 8
+      }
+   ],
+   prerequisites: ["CS303","MATH241","STAT310"],
+   department: "Computer Science",
+   school: "School of Sciences and Engineering",
+   averageRating: 8.5
+    },
+  {
+   name: "CS110",
+   sections: [
+      {
+         instructor: "Emily Johnson",
+         room:"Room 110",
+         sectionName: "A1",
+         timeslot: "MWF 2:00 PM - 3:30 PM"
+      }
+   ],
+  reviews: [
+      {
+        review: "A great introduction to Python.",
+        rating: 9
+      },
+      {
+        review: "Hands-on and interactive.",
+        rating: 8
+      }
+   ],
+   prerequisites: ["CS101"],
+   department: "Computer Science",
+   school: "School of Sciences and Engineering",
+   averageRating: 8.75
+  },
+
+  {
+   name: "CS302",
+   sections: [
+      {
+         instructor: "Robert Davis",
+         room:"Room 302",
+         sectionName: "Y2",
+         timeslot: "TR 9:00 AM - 10:30 AM"
+      }
+   ],
+  reviews: [
+      {
+        review: "Detailed and thorough.",
+        rating: 9
+      },
+      {
+        review: "Great for those interested in hardware.",
+        rating: 8
+      }
+   ],
+   prerequisites: ["CS212","ELEC220"],
+   department: "Computer Science",
+   school: "School of Sciences and Engineering",
+   averageRating: 8.5
+  },
+
+  {
+   name: "CS411",
+   sections: [
+      {
+         instructor: "William Lee",
+         room:"Room 411",
+         sectionName: "B1",
+         timeslot: "MWF 10:00 AM - 11:30 AM"
+      }
+   ],
+  reviews: [
+      {
+        review: "Provided a solid foundation for software engineering.",
+        rating: 9
+      },
+      {
+        review: "Challenging and informative.",
+        rating: 8
+      }
+   ],
+   prerequisites: ["CS212","MATH142"],
+   department: "Computer Science",
+   school: "School of Sciences and Engineering",
+   averageRating: 8.75
+  },
+  {
+    name: "PHYS200",
+    sections: [
+      {
+        instructor: "Olivia Martinez",
+        room: "Room 501",
+        sectionName: "Z",
+        timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        instructor: "Nathan Turner",
+        room: "Room 301",
+        sectionName: "X2",
+        timeslot: "TTh 10:00 AM - 11:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Interesting subject with challenging labs.",
+        rating: 7
+      },
+      {
+        review: "The instructor was knowledgeable.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["MATH101"],
+    department: "Physics",
+    school: "School of Sciences and Engineering",
+    averageRating: 7.5
+  },
+
+  {
+    name: "CHEM101",
+    sections: [
+      {
+        instructor: "Eva Reynolds",
+        room: "Room 401",
+        sectionName: "C",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Gary Walsh",
+        room: "Room 202",
+        sectionName: "D",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "The labs were fun and educational.",
+        rating: 9
+      },
+      {
+        review: "Great introductory course to chemistry.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Chemistry",
+    school: "School of Sciences and Engineering",
+    averageRating: 8.5
+  },
+  {
+    name: "ENG101",
+    sections: [
+      {
+        instructor: "Sarah Johnson",
+        room: "Room 301",
+        sectionName: "A",
+        timeslot: "MWF 10:00 AM - 11:30 AM"
+      },
+      {
+        instructor: "David Smith",
+        room: "Room 201",
+        sectionName: "B",
+        timeslot: "TTh 2:00 PM - 3:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Enjoyed the literature analysis.",
+        rating: 9
+      },
+      {
+        review: "The discussions were insightful.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "English",
+    school: "School of Humanities",
+    averageRating: 8.5
+  },
+
+  {
+    name: "HIST150",
+    sections: [
+      {
+        instructor: "Michael Turner",
+        room: "Room 401",
+        sectionName: "C",
+        timeslot: "MWF 1:00 PM - 2:30 PM"
+      },
+      {
+        instructor: "Emily White",
+        room: "Room 501",
+        sectionName: "D",
+        timeslot: "TTh 9:00 AM - 10:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Fascinating historical perspectives.",
+        rating: 9
+      },
+      {
+        review: "The instructor was passionate about the subject.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "History",
+    school: "School of Humanities",
+    averageRating: 8.5
+  },
+  {
+    name: "BUS300",
+    sections: [
+      {
+        instructor: "Alexandra Turner",
+        room: "Room 401",
+        sectionName: "C",
+        timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        instructor: "John Thompson",
+        room: "Room 501",
+        sectionName: "D",
+        timeslot: "TTh 9:00 AM - 10:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Practical business strategies covered.",
+        rating: 9
+      },
+      {
+        review: "Engaging discussions on real-world scenarios.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["BUS200"],
+    department: "Business",
+    school: "School of Management",
+    averageRating: 8.5
+  },
+
+  {
+    name: "PSYCH101",
+    sections: [
+      {
+        instructor: "Maria Hernandez",
+        room: "Room 301",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Richard Lewis",
+        room: "Room 201",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Fascinating insights into human behavior.",
+        rating: 9
+      },
+      {
+        review: "Engaging lectures with real-world examples.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Psychology",
+    school: "School of Social Sciences",
+    averageRating: 8.5
+  },
+  {
+    name: "ECON301",
+    sections: [
+      {
+        instructor: "Jessica Turner",
+        room: "Room 402",
+        sectionName: "C",
+        timeslot: "MWF 1:00 PM - 2:30 PM"
+      },
+      {
+        instructor: "Mark Johnson",
+        room: "Room 502",
+        sectionName: "D",
+        timeslot: "TTh 9:00 AM - 10:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "In-depth analysis of economic principles.",
+        rating: 9
+      },
+      {
+        review: "Challenging but rewarding assignments.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["ECON201"],
+    department: "Economics",
+    school: "School of Business",
+    averageRating: 8.5
+  },
+
+  {
+    name: "BIO201",
+    sections: [
+      {
+        instructor: "Melissa Rodriguez",
+        room: "Room 301",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Brian White",
+        room: "Room 401",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Fascinating insights into cellular biology.",
+        rating: 9
+      },
+      {
+        review: "Engaging lab experiments.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["BIOL101", "CHEM101"],
+    department: "Biology",
+    school: "School of Sciences and Engineering",
+    averageRating: 8.5
+  },
+
+  {
+    name: "SOC101",
+    sections: [
+      {
+        instructor: "Rachel Smith",
+        room: "Room 201",
+        sectionName: "A",
+        timeslot: "MWF 11:00 AM - 12:30 PM"
+      },
+      {
+        instructor: "Christopher Turner",
+        room: "Room 301",
+        sectionName: "B",
+        timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Insightful discussions on sociological concepts.",
+        rating: 9
+      },
+      {
+        review: "The instructor made the subject accessible.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Sociology",
+    school: "School of Social Sciences",
+    averageRating: 8.5
+  },
+
+  {
+    name: "PHIL200",
+    sections: [
+      {
+        instructor: "Andrew Turner",
+        room: "Room 401",
+        sectionName: "C",
+        timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        instructor: "Emma Davis",
+        room: "Room 501",
+        sectionName: "D",
+        timeslot: "TTh 10:00 AM - 11:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Thought-provoking philosophy discussions.",
+        rating: 9
+      },
+      {
+        review: "Challenging but rewarding readings.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["PHIL101"],
+    department: "Philosophy",
+    school: "School of Humanities",
+    averageRating: 8.5
+  },
+ {
+    name: "CHEM201",
+    sections: [
+      {
+        instructor: "Amanda Turner",
+        room: "Room 302",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Robert White",
+        room: "Room 402",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Advanced chemistry concepts explored.",
+        rating: 9
+      },
+      {
+        review: "The labs were challenging but informative.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["CHEM101", "MATH201"],
+    department: "Chemistry",
+    school: "School of Sciences and Engineering",
+    averageRating: 8.5
+  },
+
+  {
+    name: "ENGR301",
+    sections: [
+      {
+        instructor: "Martin Rodriguez",
+        room: "Room 501",
+        sectionName: "C",
+        timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        instructor: "Linda Davis",
+        room: "Room 601",
+        sectionName: "D",
+        timeslot: "TTh 10:00 AM - 11:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "In-depth engineering principles covered.",
+        rating: 9
+      },
+      {
+        review: "Practical projects enhanced learning.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["ENGR201", "MATH301"],
+    department: "Engineering",
+    school: "School of Sciences and Engineering",
+    averageRating: 8.5
+  },
+
+  {
+    name: "FRENCH101",
+    sections: [
+      {
+        instructor: "Sophie Martin",
+        room: "Room 201",
+        sectionName: "A",
+        timeslot: "MWF 11:00 AM - 12:30 PM"
+      },
+      {
+        instructor: "Pierre Johnson",
+        room: "Room 301",
+        sectionName: "B",
+        timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Enjoyable French language learning experience.",
+        rating: 9
+      },
+      {
+        review: "The instructor made lessons engaging.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Modern Languages",
+    school: "School of Humanities",
+    averageRating: 8.5
+  },
+
+  {
+    name: "PHYS300",
+    sections: [
+      {
+        instructor: "Julia Turner",
+        room: "Room 401",
+        sectionName: "A",
+        timeslot: "MWF 1:00 PM - 2:30 PM"
+      },
+      {
+        instructor: "Samuel White",
+        room: "Room 501",
+        sectionName: "B",
+        timeslot: "TTh 9:00 AM - 10:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Advanced physics theories discussed.",
+        rating: 9
+      },
+      {
+        review: "The instructor provided clear explanations.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["PHYS200", "MATH301"],
+    department: "Physics",
+    school: "School of Sciences and Engineering",
+    averageRating: 8.5
+  },
+
+  {
+    name: "POLSCI101",
+    sections: [
+      {
+        instructor: "Daniel Turner",
+        room: "Room 201",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Olivia White",
+        room: "Room 301",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Insightful discussions on political concepts.",
+        rating: 9
+      },
+      {
+        review: "The instructor encouraged critical thinking.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Political Science",
+    school: "School of Social Sciences",
+    averageRating: 8.5
+  },
+  {
+    name: "THEO11",
+    sections: [
+      {
+        instructor: "Father Thomas",
+        room: "Chapel",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Sister Mary",
+        room: "Chapel",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Deep theological discussions.",
+        rating: 9
+      },
+      {
+        review: "The instructor made the subject spiritually enriching.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Theology",
+    school: "School of Humanities",
+    averageRating: 8.5
+  },
+
+  {
+    name: "MATH10",
+    sections: [
+      {
+        instructor: "Professor Johnson",
+        room: "Room 301",
+        sectionName: "A",
+        timeslot: "MWF 10:00 AM - 11:30 AM"
+      },
+      {
+        instructor: "Rodriguez",
+        room: "Room 401",
+        sectionName: "B",
+        timeslot: "TTh 2:00 PM - 3:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Foundations of basic mathematical concepts.",
+        rating: 7
+      },
+      {
+        review: "The instructor was patient and supportive.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Mathematics",
+    school: "School of Sciences and Engineering",
+    averageRating: 7.5
+  },
+
+  {
+    name: "BIO31.01",
+    sections: [
+      {
+        instructor: "Emily White",
+        room: "Room 102",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Robert Turner",
+        room: "Room 202",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "In-depth exploration of biology concepts.",
+        rating: 8
+      },
+      {
+        review: "The labs were informative and engaging.",
+        rating: 9
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Biology",
+    school: "School of Sciences and Engineering",
+    averageRating: 8.5
+  },
+
+  {
+    name: "SocSc11",
+    sections: [
+      {
+        instructor: "Rachel Smith",
+        room: "Room 201",
+        sectionName: "A",
+        timeslot: "MWF 11:00 AM - 12:30 PM"
+      },
+      {
+        instructor: "Christopher Turner",
+        room: "Room 301",
+        sectionName: "B",
+        timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Insightful discussions on social science concepts.",
+        rating: 9
+      },
+      {
+        review: "The instructor encouraged critical thinking.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Social Sciences",
+    school: "School of Social Sciences",
+    averageRating: 8.5
+  },
+
+  {
+    name: "PHILO11",
+    sections: [
+      {
+        instructor: "Andrew Turner",
+        room: "Room 401",
+        sectionName: "A",
+        timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        instructor: "Emma Davis",
+        room: "Room 501",
+        sectionName: "B",
+        timeslot: "TTh 10:00 AM - 11:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Thought-provoking philosophy discussions.",
+        rating: 9
+      },
+      {
+        review: "Challenging but rewarding readings.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Philosophy",
+    school: "School of Humanities",
+    averageRating: 8.5
+  },
+
+  {
+    name: "THEO13",
+    sections: [
+      {
+        instructor: "James Turner",
+        room: "Room 212",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Angela Smith",
+        room: "Room 321",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Advanced theological discussions.",
+        rating: 9
+      },
+      {
+        review: "The instructor provided profound insights.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["THEO11"],
+    department: "Theology",
+    school: "School of Humanities",
+    averageRating: 8.5
+  }
 
 ])
+
+
+db.courses.find().forEach(printjson);
+
+
+
+
