@@ -159,19 +159,19 @@ db.courses.insertMany([
    averageRating: 9
    },
   {
-   name: "CS212",
+   name: "CS214",
    sections: [
       {
          instructor: "Yvonne Ellis",
          room: "Room 202",
-         sectionName: "Y2",
-         timeslot: "MWF 11:00 AM - 12:30 PM"
+         sectionName: "Y4",
+         timeslot: "MWF 10:00 AM - 11:30 PM"
       },
       {
          instructor: "Wilma Burton",
-         room: "Room 112",
-         sectionName: "P2",
-         timeslot: "TTh 3:00 PM - 4:30 PM"
+         room: "Room 111",
+         sectionName: "P4",
+         timeslot: "TTh 4:00 PM - 5:30 PM"
       }
    ],
    reviews: [
@@ -190,18 +190,18 @@ db.courses.insertMany([
    averageRating: 5
    },
   {
-   name: "CS303",
+   name: "CS301",
    sections: [
       {
          instructor: "David Lee",
-         room:"Room 303",
-         sectionName: "Y3",
+         room:"Room 103",
+         sectionName: "J3",
          timeslot: "MWF 2:00 PM - 3:30 PM"
       },
       {
          instructor: "Alice Johnson",
          room:"Room 403",
-         sectionName: "P3",
+         sectionName: "F3",
          timeslot: "TTh 4:00 PM - 5:30 PM"
       }
    ],
@@ -1131,7 +1131,415 @@ db.courses.insertMany([
     department: "Theology",
     school: "School of Humanities",
     averageRating: 8.5
+  },
+  {
+    name: "CS201",
+    sections: [
+      {
+        instructor: "Rachel Turner",
+        room: "Room 210",
+        sectionName: "B",
+        timeslot: "MWF 1:00 PM - 2:30 PM"
+      },
+      {
+        instructor: "Michael Johnson",
+        room: "Room 310",
+        sectionName: "A",
+        timeslot: "TTh 9:00 AM - 10:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Practical coding exercises were beneficial.",
+        rating: 7
+      },
+      {
+        review: "The coursework was challenging but rewarding.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["CS110", "MATH201"],
+    department: "Computer Science",
+    school: "School of Sciences and Engineering",
+    averageRating: 7.5
+  },
+
+  {
+    name: "MATH301",
+    sections: [
+      {
+        instructor: "Oliver Davis",
+        room: "Room 502",
+        sectionName: "C",
+        timeslot: "MWF 11:00 AM - 12:30 PM"
+      },
+      {
+        instructor: "Sophia Turner",
+        room: "Room 602",
+        sectionName: "D",
+        timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Advanced mathematical concepts explored.",
+        rating: 9
+      },
+      {
+        review: "The instructor provided clear explanations.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["MATH201"],
+    department: "Mathematics",
+    school: "School of Sciences and Engineering",
+    averageRating: 8.5
+  },
+
+  {
+    name: "CHEM301",
+    sections: [
+      {
+        instructor: "Emma Turner",
+        room: "Room 401",
+        sectionName: "A",
+        timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        instructor: "Daniel Davis",
+        room: "Room 501",
+        sectionName: "B",
+        timeslot: "TTh 10:00 AM - 11:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "In-depth exploration of advanced chemistry.",
+        rating: 8
+      },
+      {
+        review: "Challenging but informative labs.",
+        rating: 9
+      }
+    ],
+    prerequisites: ["CHEM201", "MATH301"],
+    department: "Chemistry",
+    school: "School of Sciences and Engineering",
+    averageRating: 8.5
+  },
+  {
+    name: "ECON401",
+    sections: [
+      {
+        instructor: "Sophia Turner",
+        room: "Room 502",
+        sectionName: "C",
+        timeslot: "MWF 1:00 PM - 2:30 PM"
+      },
+      {
+        instructor: "Daniel Johnson",
+        room: "Room 602",
+        sectionName: "D",
+        timeslot: "TTh 9:00 AM - 10:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Advanced economic theories explored.",
+        rating: 9
+      },
+      {
+        review: "The instructor provided real-world insights.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["ECON301"],
+    department: "Economics",
+    school: "School of Business",
+    averageRating: 8.5
+  },
+  {
+    name: "ART101",
+    sections: [
+      {
+        instructor: "Emily Turner",
+        room: "Art Studio 301",
+        sectionName: "A",
+        timeslot: "MWF 10:00 AM - 11:30 AM"
+      },
+      {
+        instructor: "Robert Johnson",
+        room: "Art Studio 401",
+        sectionName: "B",
+        timeslot: "TTh 2:00 PM - 3:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Creative and inspiring art classes.",
+        rating: 9
+      },
+      {
+        review: "The instructor encouraged artistic expression.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Art",
+    school: "School of Fine Arts",
+    averageRating: 8.5
+  },
+  {
+    name: "MUSIC200",
+    sections: [
+      {
+        instructor: "David Turner",
+        room: "Room 201",
+        sectionName: "A",
+        timeslot: "MWF 11:00 AM - 12:30 PM"
+      },
+      {
+        instructor: "Olivia Johnson",
+        room: "Room 301",
+        sectionName: "B",
+        timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "In-depth exploration of music theory.",
+        rating: 9
+      },
+      {
+        review: "Engaging music performances and discussions.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Music",
+    school: "School of Fine Arts",
+    averageRating: 8.5
+  },
+  {
+    name: "LING101",
+    sections: [
+      {
+        instructor: "Sophie Turner",
+        room: "Room 202",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Michael Johnson",
+        room: "Room 302",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 2:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Fascinating insights into linguistics.",
+        rating: 9
+      },
+      {
+        review: "The instructor made language analysis enjoyable.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Linguistics",
+    school: "School of Humanities",
+    averageRating: 8.5
+  },
+  {
+    name: "ENVSCI100",
+    sections: [
+      {
+        instructor: "Nathan Turner",
+        room: "Room 401",
+        sectionName: "A",
+        timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        instructor: "Emma Johnson",
+        room: "Room 501",
+        sectionName: "B",
+        timeslot: "TTh 10:00 AM - 11:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Eye-opening exploration of environmental science.",
+        rating: 9
+      },
+      {
+        review: "The labs provided hands-on experience.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Environmental Science",
+    school: "School of Sciences and Engineering",
+    averageRating: 8.5
+  },
+
+
+
+   name: "PHYS301",
+    sections: [
+      {
+        instructor: "Dr. Benjamin Turner",
+        room: "Physics Lab 101",
+        sectionName: "A",
+        timeslot: "MWF 10:00 AM - 12:00 PM"
+      },
+      {
+        instructor: "Dr. Samantha Johnson",
+        room: "Physics Lab 201",
+        sectionName: "B",
+        timeslot: "TTh 1:00 PM - 3:00 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Challenging but rewarding physics course.",
+        rating: 9
+      },
+      {
+        review: "The labs enhanced the understanding of theoretical concepts.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["PHYSICS201", "MATH202"],
+    department: "Physics",
+    school: "School of Sciences and Engineering",
+    averageRating: 8.5
+  },
+  {
+    name: "PSYCH101",
+    sections: [
+      {
+        instructor: "Dr. Taylor Turner",
+        room: "Psychology Building 301",
+        sectionName: "A",
+        timeslot: "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        instructor: "Dr. Jordan Johnson",
+        room: "Psychology Building 401",
+        sectionName: "B",
+        timeslot: "TTh 9:00 AM - 10:30 AM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Fascinating introduction to psychology.",
+        rating: 9
+      },
+      {
+        review: "Engaging discussions and thought-provoking assignments.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "Psychology",
+    school: "School of Social Sciences",
+    averageRating: 8.5
+  },
+  {
+    name: "CHEM202",
+    sections: [
+      {
+        instructor: "Emma Turner",
+        room: "Chemistry Lab 201",
+        sectionName: "A",
+        timeslot: "MWF 1:00 PM - 3:00 PM"
+      },
+      {
+        instructor: "Michael Johnson",
+        room: "Chemistry Lab 301",
+        sectionName: "B",
+        timeslot: "TTh 10:00 AM - 12:00 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Comprehensive coverage of organic chemistry principles.",
+        rating: 9
+      },
+      {
+        review: "The labs provided hands-on experience with chemical reactions.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["CHEMISTRY101"],
+    department: "Chemistry",
+    school: "School of Sciences and Engineering",
+    averageRating: 8.5
+  },
+  {
+    name: "HISTO101",
+    sections: [
+      {
+        instructor: "Dr. Olivia Turner",
+        room: "Room 202",
+        sectionName: "A",
+        timeslot: "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        instructor: "Dr. Ethan Johnson",
+        room: "Room 302",
+        sectionName: "B",
+        timeslot: "TTh 3:00 PM - 4:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Exploration of historical events with engaging lectures.",
+        rating: 9
+      },
+      {
+        review: "The instructor brought history to life with vivid storytelling.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["None"],
+    department: "History",
+    school: "School of Humanities",
+    averageRating: 8.5
+  },
+  {
+    name: "CS401",
+    sections: [
+      {
+        instructor: "Dr. Nathan Turner",
+        room: "Lab 401",
+        sectionName: "A",
+        timeslot: "MWF 11:00 AM - 12:30 PM"
+      },
+      {
+        instructor: "Dr. Sophia Johnson",
+        room: "Lab 501",
+        sectionName: "B",
+        timeslot: "TTh 2:00 PM - 3:30 PM"
+      }
+    ],
+    reviews: [
+      {
+        review: "Advanced programming concepts and real-world applications.",
+        rating: 9
+      },
+      {
+        review: "Challenging but rewarding assignments.",
+        rating: 8
+      }
+    ],
+    prerequisites: ["COMPSCI301"],
+    department: "Computer Science",
+    school: "School of Engineering",
+    averageRating: 8.5
   }
+
 
 ])
 
