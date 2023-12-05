@@ -1544,6 +1544,46 @@ db.courses.insertMany([
 ])
 
 
+db.courses.insertOne({
+  name: "ART102",
+  sections: [
+    {
+      instructor: "Lisa Johnson",
+      room: "Art Studio 1",
+      sectionName: "A",
+      timeslot: "MWF 1:00 PM - 2:30 PM"
+    },
+    {
+      instructor: "David Turner",
+      room: "Art Studio 2",
+      sectionName: "B",
+      timeslot: "TTh 10:00 AM - 11:30 AM"
+    }
+  ],
+  reviews: [
+    {
+      review: "Creative and inspiring.",
+      rating: 9
+    },
+    {
+      review: "The projects were enjoyable.",
+      rating: 8
+    }
+  ],
+  prerequisites: ["None"],
+  department: "Fine Arts",
+  school: "School of Arts",
+  averageRating: 8.5
+});
+
+db.courses.updateOne(
+   { name: "MATH101" },
+   { $set: { name: "MATH200" } }
+);
+
+db.courses.deleteOne({ name: "MATH101" });
+
+
 db.courses.find().forEach(printjson);
 
 
