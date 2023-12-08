@@ -1,4 +1,4 @@
-db.courses.insertMany([
+db.instructors.insertMany([
     {
         firstName: "Michael Edison",
         lastName: "Legaspi",
@@ -1021,4 +1021,38 @@ db.courses.insertMany([
       }
     ]
   }
-])
+]);
+
+db.instructors.insertOne({
+    "firstName": "Jotaro",
+    "lastName": "Kujo",
+    "email": "jkujo@ateneo.edu",
+    "department": "Biology",
+    "school": "SOSE",
+    "classesTaught": [
+        {
+            "section": "BIO 100.3 J",
+            "timeslot": "TF 8:00 AM - 9:30 AM",
+            "room": "SEC-A 116A"
+        }
+    ],
+    "reviews": [
+        {
+            "review": "He's very curt and he looks scary but he makes sure students can all keep up in his class.",
+            "rating": 10
+        },
+        {
+            "review": "I have to warn you he's always too quiet or too loud in class. Also has a weird fixation on dolphins."
+            "rating": 3
+        }
+    ]
+});
+
+db.instructors.updateOne(
+    {lastName: "Manalo"},
+    {$set: {firstname: "Alfonse"}}
+);
+
+db.instructors.deleteOne({lastName: "Reyes"});
+
+db.instructors.find().forEach(printjson);
