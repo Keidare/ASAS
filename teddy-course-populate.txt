@@ -125,7 +125,7 @@ db.courses.insertMany([
     prerequisites: ["MATH101"],
     department: "Physics",
     school: "School of Sciences and Engineering",
-    averageRating: 7.5
+    averageRating: 7
   },
   {
    name: "CS212",
@@ -336,7 +336,8 @@ db.courses.insertMany([
    prerequisites: ["CS212","PHIL112"],
    department: "Computer Science",
    school: "School of Sciences and Engineering",
-   averageRating: 8.5
+   averageRating: 8
+  
     },
   {
    name: "CS412",
@@ -361,7 +362,7 @@ db.courses.insertMany([
    prerequisites: ["CS212","MATH142"],
    department: "Computer Science",
    school: "School of Sciences and Engineering",
-   averageRating: 8.75
+   averageRating: 8
     },
 
    {
@@ -387,7 +388,7 @@ db.courses.insertMany([
    prerequisites: ["CS303","MATH241","STAT310"],
    department: "Computer Science",
    school: "School of Sciences and Engineering",
-   averageRating: 8.5
+   averageRating: 8
     },
   {
    name: "CS110",
@@ -412,7 +413,7 @@ db.courses.insertMany([
    prerequisites: ["CS101"],
    department: "Computer Science",
    school: "School of Sciences and Engineering",
-   averageRating: 8.75
+   averageRating: 8
   },
 
   {
@@ -438,7 +439,7 @@ db.courses.insertMany([
    prerequisites: ["CS212","ELEC220"],
    department: "Computer Science",
    school: "School of Sciences and Engineering",
-   averageRating: 8.5
+   averageRating: 8
   },
 
   {
@@ -464,7 +465,7 @@ db.courses.insertMany([
    prerequisites: ["CS212","MATH142"],
    department: "Computer Science",
    school: "School of Sciences and Engineering",
-   averageRating: 8.75
+   averageRating: 8
   },
   {
     name: "PHYS200",
@@ -495,7 +496,8 @@ db.courses.insertMany([
     prerequisites: ["MATH101"],
     department: "Physics",
     school: "School of Sciences and Engineering",
-    averageRating: 7.5
+    averageRating: 7
+  
   },
 
   {
@@ -527,7 +529,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "Chemistry",
     school: "School of Sciences and Engineering",
-    averageRating: 8.5
+    averageRating: 8
   },
   {
     name: "ENG101",
@@ -558,7 +560,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "English",
     school: "School of Humanities",
-    averageRating: 8.5
+    averageRating: 8
   },
 
   {
@@ -590,7 +592,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "History",
     school: "School of Humanities",
-    averageRating: 8.5
+    averageRating: 8
   },
   {
     name: "BUS300",
@@ -621,7 +623,7 @@ db.courses.insertMany([
     prerequisites: ["BUS200"],
     department: "Business",
     school: "School of Management",
-    averageRating: 8.5
+    averageRating: 8
   },
 
   {
@@ -653,7 +655,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "Psychology",
     school: "School of Social Sciences",
-    averageRating: 8.5
+    averageRating: 8
   },
   {
     name: "ECON301",
@@ -684,7 +686,7 @@ db.courses.insertMany([
     prerequisites: ["ECON201"],
     department: "Economics",
     school: "School of Business",
-    averageRating: 8.5
+    averageRating: 8
   },
 
   {
@@ -716,7 +718,7 @@ db.courses.insertMany([
     prerequisites: ["BIOL101", "CHEM101"],
     department: "Biology",
     school: "School of Sciences and Engineering",
-    averageRating: 8.5
+    averageRating: 8
   },
 
   {
@@ -748,7 +750,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "Sociology",
     school: "School of Social Sciences",
-    averageRating: 8.5
+    averageRating: 8
   },
 
   {
@@ -780,7 +782,7 @@ db.courses.insertMany([
     prerequisites: ["PHIL101"],
     department: "Philosophy",
     school: "School of Humanities",
-    averageRating: 8.5
+    averageRating: 8
   },
  {
     name: "CHEM201",
@@ -811,7 +813,7 @@ db.courses.insertMany([
     prerequisites: ["CHEM101", "MATH201"],
     department: "Chemistry",
     school: "School of Sciences and Engineering",
-    averageRating: 8.5
+    averageRating: 8
   },
 
   {
@@ -843,7 +845,7 @@ db.courses.insertMany([
     prerequisites: ["ENGR201", "MATH301"],
     department: "Engineering",
     school: "School of Sciences and Engineering",
-    averageRating: 8.5
+    averageRating: 8
   },
 
   {
@@ -875,7 +877,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "Modern Languages",
     school: "School of Humanities",
-    averageRating: 8.5
+    averageRating: 8
   },
 
   {
@@ -907,7 +909,7 @@ db.courses.insertMany([
     prerequisites: ["PHYS200", "MATH301"],
     department: "Physics",
     school: "School of Sciences and Engineering",
-    averageRating: 8.5
+    averageRating: 8
   },
 
   {
@@ -939,7 +941,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "Political Science",
     school: "School of Social Sciences",
-    averageRating: 8.5
+    averageRating: 8
   },
   {
     name: "THEO11",
@@ -970,7 +972,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "Theology",
     school: "School of Humanities",
-    averageRating: 8.5
+    averageRating: 8
   },
 
   {
@@ -1002,7 +1004,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "Mathematics",
     school: "School of Sciences and Engineering",
-    averageRating: 7.5
+    averageRating: 7
   },
 
   {
@@ -1034,7 +1036,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "Biology",
     school: "School of Sciences and Engineering",
-    averageRating: 8.5
+    averageRating: 8
   },
 
   {
@@ -1066,7 +1068,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "Social Sciences",
     school: "School of Social Sciences",
-    averageRating: 8.5
+    averageRating: 8
   },
 
   {
@@ -1098,7 +1100,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "Philosophy",
     school: "School of Humanities",
-    averageRating: 8.5
+    averageRating: 8
   },
 
   {
@@ -1130,7 +1132,7 @@ db.courses.insertMany([
     prerequisites: ["THEO11"],
     department: "Theology",
     school: "School of Humanities",
-    averageRating: 8.5
+    averageRating: 8
   },
   {
     name: "CS201",
@@ -1161,7 +1163,7 @@ db.courses.insertMany([
     prerequisites: ["CS110", "MATH201"],
     department: "Computer Science",
     school: "School of Sciences and Engineering",
-    averageRating: 7.5
+    averageRating: 7
   },
 
   {
@@ -1193,7 +1195,7 @@ db.courses.insertMany([
     prerequisites: ["MATH201"],
     department: "Mathematics",
     school: "School of Sciences and Engineering",
-    averageRating: 8.5
+    averageRating: 8
   },
 
   {
@@ -1225,7 +1227,7 @@ db.courses.insertMany([
     prerequisites: ["CHEM201", "MATH301"],
     department: "Chemistry",
     school: "School of Sciences and Engineering",
-    averageRating: 8.5
+    averageRating: 8
   },
   {
     name: "ECON401",
@@ -1256,7 +1258,7 @@ db.courses.insertMany([
     prerequisites: ["ECON301"],
     department: "Economics",
     school: "School of Business",
-    averageRating: 8.5
+    averageRating: 8
   },
   {
     name: "ART101",
@@ -1287,7 +1289,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "Art",
     school: "School of Fine Arts",
-    averageRating: 8.5
+    averageRating: 8
   },
   {
     name: "MUSIC200",
@@ -1318,7 +1320,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "Music",
     school: "School of Fine Arts",
-    averageRating: 8.5
+    averageRating: 8
   },
   {
     name: "LING101",
@@ -1349,7 +1351,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "Linguistics",
     school: "School of Humanities",
-    averageRating: 8.5
+    averageRating: 8
   },
   {
     name: "ENVSCI100",
@@ -1380,7 +1382,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "Environmental Science",
     school: "School of Sciences and Engineering",
-    averageRating: 8.5
+    averageRating: 8
   },
 
 
@@ -1413,7 +1415,7 @@ db.courses.insertMany([
     prerequisites: ["PHYSICS201", "MATH202"],
     department: "Physics",
     school: "School of Sciences and Engineering",
-    averageRating: 8.5
+    averageRating: 8
   },
   {
     name: "PSYCH101",
@@ -1444,7 +1446,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "Psychology",
     school: "School of Social Sciences",
-    averageRating: 8.5
+    averageRating: 8
   },
   {
     name: "CHEM202",
@@ -1475,7 +1477,7 @@ db.courses.insertMany([
     prerequisites: ["CHEMISTRY101"],
     department: "Chemistry",
     school: "School of Sciences and Engineering",
-    averageRating: 8.5
+    averageRating: 8
   },
   {
     name: "HISTO101",
@@ -1506,7 +1508,7 @@ db.courses.insertMany([
     prerequisites: ["None"],
     department: "History",
     school: "School of Humanities",
-    averageRating: 8.5
+    averageRating: 8
   },
   {
     name: "CS401",
@@ -1537,11 +1539,9 @@ db.courses.insertMany([
     prerequisites: ["COMPSCI301"],
     department: "Computer Science",
     school: "School of Engineering",
-    averageRating: 8.5
+    averageRating: 8
   }
-
-
-])
+]);
 
 
 db.courses.insertOne({
@@ -1573,7 +1573,7 @@ db.courses.insertOne({
   prerequisites: ["None"],
   department: "Fine Arts",
   school: "School of Arts",
-  averageRating: 8.5
+  averageRating: 8
 });
 
 db.courses.updateOne(

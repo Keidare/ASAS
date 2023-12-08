@@ -1,4 +1,4 @@
-db.courses.insertMany([
+db.instructors.insertMany([
     {
         firstName: "Michael Edison",
         lastName: "Legaspi",
