@@ -5,13 +5,13 @@ db.courses.insertMany([
    sections: [
       {
          instructor: "Hugo Simpson",
-         room: "Room 107",
+         room: "CTC07",
          sectionName: "K",
          timeslot: "MWF 10:00 AM - 11:30 AM"
       },
       {
          instructor: "Juan Greene",
-         room: "Room 205",
+         room: "F 205",
          sectionName: "J2",
          timeslot: "TTh 1:00 PM - 2:30 PM"
       }
@@ -28,7 +28,7 @@ db.courses.insertMany([
    ],
    prerequisites: ["CS222","CS123","MATH121"],
    department: "Computer Science",
-   school: "School of Sciences and Engineering",
+   school: "SOSE",
    averageRating: 10
    },
 
@@ -37,13 +37,13 @@ db.courses.insertMany([
    sections: [
       {
          instructor: "Erma Zimmerman",
-         room: "Room 123",
+         room: "CTC23",
          sectionName: "L",
          timeslot: "TTh 10:00 AM - 11:30 AM"
       },
       {
          instructor: "Whitney Duncan",
-         room: "Room 532",
+         room: "B 532",
          sectionName: "Q",
          timeslot: "S 1:00 PM - 4:30 PM"
       }
@@ -60,7 +60,7 @@ db.courses.insertMany([
    ],
    prerequisites: ["CS100", "MATH101"],
    department: "Computer Science",
-   school: "School of Sciences and Engineering",
+   school: "SOSE",
    averageRating: 10
    },
 
@@ -69,13 +69,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Matthew Jimenez",
-        room: "Room 102",
+        room: "CTC02",
         sectionName: "A",
         timeslot: "MWF 9:00 AM - 10:30 AM"
       },
       {
         instructor: "Brenda Rodriquez",
-        room: "Room 201",
+        room: "F 201",
         sectionName: "B",
         timeslot: "TTh 11:00 AM - 12:30 PM"
       }
@@ -92,7 +92,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Mathematics",
-    school: "School of Sciences and Engineering",
+    school: "SOSE",
     averageRating: 9
   },
 
@@ -101,13 +101,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Kristi Burgess",
-        room: "Room 301",
+        room: "B 301",
         sectionName: "X",
         timeslot: "MWF 1:00 PM - 2:30 PM"
       },
       {
         instructor: "Wilma Burton",
-        room: "Room 401",
+        room: "CTC 401",
         sectionName: "Y",
         timeslot: "TTh 3:00 PM - 4:30 PM"
       }
@@ -124,7 +124,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["MATH101"],
     department: "Physics",
-    school: "School of Sciences and Engineering",
+    school: "SOSE",
     averageRating: 7.5
   },
   {
@@ -132,13 +132,13 @@ db.courses.insertMany([
    sections: [
       {
          instructor: "Yvonne Ellis",
-         room: "Room 502",
+         room: "B 502",
          sectionName: "Y2",
          timeslot: "MWF 11:00 AM - 12:30 PM"
       },
       {
          instructor: "Wilma Burton",
-         room: "Room 212",
+         room: "F 212",
          sectionName: "P2",
          timeslot: "TTh 3:00 PM - 4:30 PM"
       }
@@ -155,7 +155,7 @@ db.courses.insertMany([
    ],
    prerequisites: ["CS222","MATH102","MATH121"],
    department: "Computer Science",
-   school: "School of Sciences and Engineering",
+   school: "SOSE",
    averageRating: 9
    },
   {
@@ -163,13 +163,13 @@ db.courses.insertMany([
    sections: [
       {
          instructor: "Yvonne Ellis",
-         room: "Room 202",
+         room: "F 202",
          sectionName: "Y4",
          timeslot: "MWF 10:00 AM - 11:30 PM"
       },
       {
          instructor: "Wilma Burton",
-         room: "Room 111",
+         room: "CTC11",
          sectionName: "P4",
          timeslot: "TTh 4:00 PM - 5:30 PM"
       }
@@ -186,7 +186,7 @@ db.courses.insertMany([
    ],
    prerequisites: ["CS222","MATH102","MATH121"],
    department: "Computer Science",
-   school: "School of Sciences and Engineering",
+   school: "SOSE",
    averageRating: 5
    },
   {
@@ -194,13 +194,13 @@ db.courses.insertMany([
    sections: [
       {
          instructor: "David Lee",
-         room:"Room 103",
+         room:"CTC03",
          sectionName: "J3",
          timeslot: "MWF 2:00 PM - 3:30 PM"
       },
       {
          instructor: "Alice Johnson",
-         room:"Room 403",
+         room:"CTC 403",
          sectionName: "F3",
          timeslot: "TTh 4:00 PM - 5:30 PM"
       }
@@ -217,7 +217,7 @@ db.courses.insertMany([
    ],
    prerequisites: ["CS212","MATH142","PHYS151"],
    department: "Computer Science",
-   school: "School of Sciences and Engineering",
+   school: "SOSE",
    averageRating: 8
    },
   {
@@ -225,13 +225,13 @@ db.courses.insertMany([
    sections: [
       {
          instructor: "David Lee",
-         room:"Room 303",
+         room:"B 303",
          sectionName: "Y3",
          timeslot: "MWF 2:00 PM - 3:30 PM"
       },
       {
          instructor: "Alice Johnson",
-         room:"Room 403",
+         room:"CTC 403",
          sectionName: "P3",
          timeslot: "TTh 4:00 PM - 5:30 PM"
       }
@@ -248,7 +248,7 @@ db.courses.insertMany([
    ],
    prerequisites: ["CS212","MATH142","PHYS151"],
    department: "Computer Science",
-   school: "School of Sciences and Engineering",
+   school: "SOSE",
    averageRating: 8
    },
   {
@@ -256,13 +256,13 @@ db.courses.insertMany([
    sections: [
       {
          instructor: "Johnathan Lee",
-         room:"Room 111",
+         room:"CTC11",
          sectionName: "Z",
          timeslot: "MWF 2:00 PM - 3:30 PM"
       },
       {
          instructor: "Joseph Johnson",
-         room:"Room 103",
+         room:"CTC03",
          sectionName: "P3",
          timeslot: "TTh 4:00 PM - 5:30 PM"
       }
@@ -279,7 +279,7 @@ db.courses.insertMany([
    ],
    prerequisites: ["CS212","MATH142","PHYS151"],
    department: "Computer Science",
-   school: "School of Sciences and Engineering",
+   school: "SOSE",
    averageRating: 8
    },
   {
@@ -287,13 +287,13 @@ db.courses.insertMany([
    sections: [
       {
          instructor: "David Cruz",
-         room:"Room 303",
+         room:"B 303",
          sectionName: "Y3",
          timeslot: "MWF 2:00 PM - 3:30 PM"
       },
       {
          instructor: "Alex Johnson",
-         room:"Room 403",
+         room:"CTC 403",
          sectionName: "P3",
          timeslot: "TTh 4:00 PM - 5:30 PM"
       }
@@ -310,7 +310,7 @@ db.courses.insertMany([
    ],
    prerequisites: ["CS212","MATH142","PHYS151"],
    department: "Computer Science",
-   school: "School of Sciences and Engineering",
+   school: "SOSE",
    averageRating: 8
    },
 {
@@ -318,7 +318,7 @@ db.courses.insertMany([
    sections: [
       {
          instructor: "Sam Brown",
-         room:"Room 444",
+         room:"CTC 444",
          sectionName: "L4",
          timeslot: "Th 1:00 PM - 2:30 PM"
       }
@@ -335,7 +335,7 @@ db.courses.insertMany([
    ],
    prerequisites: ["CS212","PHIL112"],
    department: "Computer Science",
-   school: "School of Sciences and Engineering",
+   school: "SOSE",
    averageRating: 8.5
     },
   {
@@ -343,7 +343,7 @@ db.courses.insertMany([
    sections: [
       {
          instructor: "Lisa Green",
-         room:"Room 412",
+         room:"CTC 412",
          sectionName: "B4",
          timeslot: "MWF 9:00 AM - 10:30 AM"
       }
@@ -360,7 +360,7 @@ db.courses.insertMany([
    ],
    prerequisites: ["CS212","MATH142"],
    department: "Computer Science",
-   school: "School of Sciences and Engineering",
+   school: "SOSE",
    averageRating: 8.75
     },
 
@@ -369,7 +369,7 @@ db.courses.insertMany([
    sections: [
       {
          instructor: "Michael Smith",
-         room:"Room 523",
+         room:"B 523",
          sectionName: "X3",
          timeslot: "Th 10:00 AM - 11:30 AM"
       }
@@ -386,7 +386,7 @@ db.courses.insertMany([
    ],
    prerequisites: ["CS303","MATH241","STAT310"],
    department: "Computer Science",
-   school: "School of Sciences and Engineering",
+   school: "SOSE",
    averageRating: 8.5
     },
   {
@@ -394,7 +394,7 @@ db.courses.insertMany([
    sections: [
       {
          instructor: "Emily Johnson",
-         room:"Room 110",
+         room:"CTC10",
          sectionName: "A1",
          timeslot: "MWF 2:00 PM - 3:30 PM"
       }
@@ -411,7 +411,7 @@ db.courses.insertMany([
    ],
    prerequisites: ["CS101"],
    department: "Computer Science",
-   school: "School of Sciences and Engineering",
+   school: "SOSE",
    averageRating: 8.75
   },
 
@@ -420,7 +420,7 @@ db.courses.insertMany([
    sections: [
       {
          instructor: "Robert Davis",
-         room:"Room 302",
+         room:"B 302",
          sectionName: "Y2",
          timeslot: "TR 9:00 AM - 10:30 AM"
       }
@@ -437,7 +437,7 @@ db.courses.insertMany([
    ],
    prerequisites: ["CS212","ELEC220"],
    department: "Computer Science",
-   school: "School of Sciences and Engineering",
+   school: "SOSE",
    averageRating: 8.5
   },
 
@@ -446,7 +446,7 @@ db.courses.insertMany([
    sections: [
       {
          instructor: "William Lee",
-         room:"Room 411",
+         room:"CTC 411",
          sectionName: "B1",
          timeslot: "MWF 10:00 AM - 11:30 AM"
       }
@@ -463,7 +463,7 @@ db.courses.insertMany([
    ],
    prerequisites: ["CS212","MATH142"],
    department: "Computer Science",
-   school: "School of Sciences and Engineering",
+   school: "SOSE",
    averageRating: 8.75
   },
   {
@@ -471,13 +471,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Olivia Martinez",
-        room: "Room 501",
+        room: "B 501",
         sectionName: "Z",
         timeslot: "MWF 2:00 PM - 3:30 PM"
       },
       {
         instructor: "Nathan Turner",
-        room: "Room 301",
+        room: "B 301",
         sectionName: "X2",
         timeslot: "TTh 10:00 AM - 11:30 AM"
       }
@@ -494,7 +494,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["MATH101"],
     department: "Physics",
-    school: "School of Sciences and Engineering",
+    school: "SOSE",
     averageRating: 7.5
   },
 
@@ -503,13 +503,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Eva Reynolds",
-        room: "Room 401",
+        room: "CTC 401",
         sectionName: "C",
         timeslot: "MWF 9:00 AM - 10:30 AM"
       },
       {
         instructor: "Gary Walsh",
-        room: "Room 202",
+        room: "F 202",
         sectionName: "D",
         timeslot: "TTh 1:00 PM - 2:30 PM"
       }
@@ -526,7 +526,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Chemistry",
-    school: "School of Sciences and Engineering",
+    school: "SOSE",
     averageRating: 8.5
   },
   {
@@ -534,13 +534,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Sarah Johnson",
-        room: "Room 301",
+        room: "B 301",
         sectionName: "A",
         timeslot: "MWF 10:00 AM - 11:30 AM"
       },
       {
         instructor: "David Smith",
-        room: "Room 201",
+        room: "F 201",
         sectionName: "B",
         timeslot: "TTh 2:00 PM - 3:30 PM"
       }
@@ -557,7 +557,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "English",
-    school: "School of Humanities",
+    school: "SOH",
     averageRating: 8.5
   },
 
@@ -566,13 +566,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Michael Turner",
-        room: "Room 401",
+        room: "CTC 401",
         sectionName: "C",
         timeslot: "MWF 1:00 PM - 2:30 PM"
       },
       {
         instructor: "Emily White",
-        room: "Room 501",
+        room: "B 501",
         sectionName: "D",
         timeslot: "TTh 9:00 AM - 10:30 AM"
       }
@@ -589,7 +589,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "History",
-    school: "School of Humanities",
+    school: "SOH",
     averageRating: 8.5
   },
   {
@@ -597,13 +597,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Alexandra Turner",
-        room: "Room 401",
+        room: "CTC 401",
         sectionName: "C",
         timeslot: "MWF 2:00 PM - 3:30 PM"
       },
       {
         instructor: "John Thompson",
-        room: "Room 501",
+        room: "B 501",
         sectionName: "D",
         timeslot: "TTh 9:00 AM - 10:30 AM"
       }
@@ -620,7 +620,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["BUS200"],
     department: "Business",
-    school: "School of Management",
+    school: "JGSOM",
     averageRating: 8.5
   },
 
@@ -629,13 +629,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Maria Hernandez",
-        room: "Room 301",
+        room: "B 301",
         sectionName: "A",
         timeslot: "MWF 9:00 AM - 10:30 AM"
       },
       {
         instructor: "Richard Lewis",
-        room: "Room 201",
+        room: "F 201",
         sectionName: "B",
         timeslot: "TTh 1:00 PM - 2:30 PM"
       }
@@ -652,7 +652,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Psychology",
-    school: "School of Social Sciences",
+    school: "SOSS",
     averageRating: 8.5
   },
   {
@@ -660,13 +660,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Jessica Turner",
-        room: "Room 402",
+        room: "CTC 402",
         sectionName: "C",
         timeslot: "MWF 1:00 PM - 2:30 PM"
       },
       {
         instructor: "Mark Johnson",
-        room: "Room 502",
+        room: "B 502",
         sectionName: "D",
         timeslot: "TTh 9:00 AM - 10:30 AM"
       }
@@ -683,7 +683,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["ECON201"],
     department: "Economics",
-    school: "School of Business",
+    school: "JGSOM",
     averageRating: 8.5
   },
 
@@ -692,13 +692,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Melissa Rodriguez",
-        room: "Room 301",
+        room: "B 301",
         sectionName: "A",
         timeslot: "MWF 9:00 AM - 10:30 AM"
       },
       {
         instructor: "Brian White",
-        room: "Room 401",
+        room: "CTC 411",
         sectionName: "B",
         timeslot: "TTh 1:00 PM - 2:30 PM"
       }
@@ -715,7 +715,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["BIOL101", "CHEM101"],
     department: "Biology",
-    school: "School of Sciences and Engineering",
+    school: "SOSE",
     averageRating: 8.5
   },
 
@@ -724,13 +724,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Rachel Smith",
-        room: "Room 201",
+        room: "F 201",
         sectionName: "A",
         timeslot: "MWF 11:00 AM - 12:30 PM"
       },
       {
         instructor: "Christopher Turner",
-        room: "Room 301",
+        room: "B 301",
         sectionName: "B",
         timeslot: "TTh 3:00 PM - 4:30 PM"
       }
@@ -747,7 +747,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Sociology",
-    school: "School of Social Sciences",
+    school: "SOSS",
     averageRating: 8.5
   },
 
@@ -756,13 +756,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Andrew Turner",
-        room: "Room 401",
+        room: "CTC 413",
         sectionName: "C",
         timeslot: "MWF 2:00 PM - 3:30 PM"
       },
       {
         instructor: "Emma Davis",
-        room: "Room 501",
+        room: "B 501",
         sectionName: "D",
         timeslot: "TTh 10:00 AM - 11:30 AM"
       }
@@ -779,7 +779,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["PHIL101"],
     department: "Philosophy",
-    school: "School of Humanities",
+    school: "SOH",
     averageRating: 8.5
   },
  {
@@ -787,13 +787,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Amanda Turner",
-        room: "Room 302",
+        room: "B 302",
         sectionName: "A",
         timeslot: "MWF 9:00 AM - 10:30 AM"
       },
       {
         instructor: "Robert White",
-        room: "Room 402",
+        room: "CTC 402",
         sectionName: "B",
         timeslot: "TTh 1:00 PM - 2:30 PM"
       }
@@ -810,7 +810,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["CHEM101", "MATH201"],
     department: "Chemistry",
-    school: "School of Sciences and Engineering",
+    school: "SOSE",
     averageRating: 8.5
   },
 
@@ -819,13 +819,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Martin Rodriguez",
-        room: "Room 501",
+        room: "B 501",
         sectionName: "C",
         timeslot: "MWF 2:00 PM - 3:30 PM"
       },
       {
         instructor: "Linda Davis",
-        room: "Room 601",
+        room: "B 601",
         sectionName: "D",
         timeslot: "TTh 10:00 AM - 11:30 AM"
       }
@@ -842,7 +842,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["ENGR201", "MATH301"],
     department: "Engineering",
-    school: "School of Sciences and Engineering",
+    school: "SOSE",
     averageRating: 8.5
   },
 
@@ -851,13 +851,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Sophie Martin",
-        room: "Room 201",
+        room: "F 201",
         sectionName: "A",
         timeslot: "MWF 11:00 AM - 12:30 PM"
       },
       {
         instructor: "Pierre Johnson",
-        room: "Room 301",
+        room: "B 301",
         sectionName: "B",
         timeslot: "TTh 3:00 PM - 4:30 PM"
       }
@@ -874,7 +874,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Modern Languages",
-    school: "School of Humanities",
+    school: "SOH",
     averageRating: 8.5
   },
 
@@ -883,13 +883,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Julia Turner",
-        room: "Room 401",
+        room: "CTC 401",
         sectionName: "A",
         timeslot: "MWF 1:00 PM - 2:30 PM"
       },
       {
         instructor: "Samuel White",
-        room: "Room 501",
+        room: "B 501",
         sectionName: "B",
         timeslot: "TTh 9:00 AM - 10:30 AM"
       }
@@ -906,7 +906,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["PHYS200", "MATH301"],
     department: "Physics",
-    school: "School of Sciences and Engineering",
+    school: "SOSE",
     averageRating: 8.5
   },
 
@@ -915,13 +915,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Daniel Turner",
-        room: "Room 201",
+        room: "F 201",
         sectionName: "A",
         timeslot: "MWF 9:00 AM - 10:30 AM"
       },
       {
         instructor: "Olivia White",
-        room: "Room 301",
+        room: "B 301",
         sectionName: "B",
         timeslot: "TTh 1:00 PM - 2:30 PM"
       }
@@ -938,7 +938,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Political Science",
-    school: "School of Social Sciences",
+    school: "SOSS",
     averageRating: 8.5
   },
   {
@@ -969,7 +969,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Theology",
-    school: "School of Humanities",
+    school: "SOH",
     averageRating: 8.5
   },
 
@@ -978,13 +978,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Professor Johnson",
-        room: "Room 301",
+        room: "B 301",
         sectionName: "A",
         timeslot: "MWF 10:00 AM - 11:30 AM"
       },
       {
         instructor: "Rodriguez",
-        room: "Room 401",
+        room: "CTC 401",
         sectionName: "B",
         timeslot: "TTh 2:00 PM - 3:30 PM"
       }
@@ -1001,7 +1001,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Mathematics",
-    school: "School of Sciences and Engineering",
+    school: "SOSE",
     averageRating: 7.5
   },
 
@@ -1010,13 +1010,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Emily White",
-        room: "Room 102",
+        room: "CTC02",
         sectionName: "A",
         timeslot: "MWF 9:00 AM - 10:30 AM"
       },
       {
         instructor: "Robert Turner",
-        room: "Room 202",
+        room: "F 202",
         sectionName: "B",
         timeslot: "TTh 1:00 PM - 2:30 PM"
       }
@@ -1033,7 +1033,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Biology",
-    school: "School of Sciences and Engineering",
+    school: "SOSE",
     averageRating: 8.5
   },
 
@@ -1042,13 +1042,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Rachel Smith",
-        room: "Room 201",
+        room: "F 201",
         sectionName: "A",
         timeslot: "MWF 11:00 AM - 12:30 PM"
       },
       {
         instructor: "Christopher Turner",
-        room: "Room 301",
+        room: "B 301",
         sectionName: "B",
         timeslot: "TTh 3:00 PM - 4:30 PM"
       }
@@ -1065,7 +1065,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Social Sciences",
-    school: "School of Social Sciences",
+    school: "SOSS",
     averageRating: 8.5
   },
 
@@ -1074,13 +1074,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Andrew Turner",
-        room: "Room 401",
+        room: "CTC 401",
         sectionName: "A",
         timeslot: "MWF 2:00 PM - 3:30 PM"
       },
       {
         instructor: "Emma Davis",
-        room: "Room 501",
+        room: "B 501",
         sectionName: "B",
         timeslot: "TTh 10:00 AM - 11:30 AM"
       }
@@ -1097,7 +1097,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Philosophy",
-    school: "School of Humanities",
+    school: "SOH",
     averageRating: 8.5
   },
 
@@ -1106,13 +1106,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "James Turner",
-        room: "Room 212",
+        room: "F 212",
         sectionName: "A",
         timeslot: "MWF 9:00 AM - 10:30 AM"
       },
       {
         instructor: "Angela Smith",
-        room: "Room 321",
+        room: "B 321",
         sectionName: "B",
         timeslot: "TTh 1:00 PM - 2:30 PM"
       }
@@ -1129,7 +1129,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["THEO11"],
     department: "Theology",
-    school: "School of Humanities",
+    school: "SOH",
     averageRating: 8.5
   },
   {
@@ -1137,13 +1137,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Rachel Turner",
-        room: "Room 210",
+        room: "F 210",
         sectionName: "B",
         timeslot: "MWF 1:00 PM - 2:30 PM"
       },
       {
         instructor: "Michael Johnson",
-        room: "Room 310",
+        room: "B 310",
         sectionName: "A",
         timeslot: "TTh 9:00 AM - 10:30 AM"
       }
@@ -1160,7 +1160,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["CS110", "MATH201"],
     department: "Computer Science",
-    school: "School of Sciences and Engineering",
+    school: "SOSE",
     averageRating: 7.5
   },
 
@@ -1169,13 +1169,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Oliver Davis",
-        room: "Room 502",
+        room: "B 502",
         sectionName: "C",
         timeslot: "MWF 11:00 AM - 12:30 PM"
       },
       {
         instructor: "Sophia Turner",
-        room: "Room 602",
+        room: "B 602",
         sectionName: "D",
         timeslot: "TTh 3:00 PM - 4:30 PM"
       }
@@ -1192,7 +1192,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["MATH201"],
     department: "Mathematics",
-    school: "School of Sciences and Engineering",
+    school: "SOSE",
     averageRating: 8.5
   },
 
@@ -1201,13 +1201,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Emma Turner",
-        room: "Room 401",
+        room: "CTC 401",
         sectionName: "A",
         timeslot: "MWF 2:00 PM - 3:30 PM"
       },
       {
         instructor: "Daniel Davis",
-        room: "Room 501",
+        room: "B 501",
         sectionName: "B",
         timeslot: "TTh 10:00 AM - 11:30 AM"
       }
@@ -1224,7 +1224,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["CHEM201", "MATH301"],
     department: "Chemistry",
-    school: "School of Sciences and Engineering",
+    school: "SOSE",
     averageRating: 8.5
   },
   {
@@ -1232,13 +1232,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Sophia Turner",
-        room: "Room 502",
+        room: "B 502",
         sectionName: "C",
         timeslot: "MWF 1:00 PM - 2:30 PM"
       },
       {
         instructor: "Daniel Johnson",
-        room: "Room 602",
+        room: "B 602",
         sectionName: "D",
         timeslot: "TTh 9:00 AM - 10:30 AM"
       }
@@ -1255,7 +1255,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["ECON301"],
     department: "Economics",
-    school: "School of Business",
+    school: "JGSOM",
     averageRating: 8.5
   },
   {
@@ -1263,13 +1263,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Emily Turner",
-        room: "Art Studio 301",
+        room: "CTC 301",
         sectionName: "A",
         timeslot: "MWF 10:00 AM - 11:30 AM"
       },
       {
         instructor: "Robert Johnson",
-        room: "Art Studio 401",
+        room: "CTC 401",
         sectionName: "B",
         timeslot: "TTh 2:00 PM - 3:30 PM"
       }
@@ -1286,7 +1286,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Art",
-    school: "School of Fine Arts",
+    school: "SOH",
     averageRating: 8.5
   },
   {
@@ -1294,13 +1294,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "David Turner",
-        room: "Room 201",
+        room: "F 201",
         sectionName: "A",
         timeslot: "MWF 11:00 AM - 12:30 PM"
       },
       {
         instructor: "Olivia Johnson",
-        room: "Room 301",
+        room: "B 301",
         sectionName: "B",
         timeslot: "TTh 3:00 PM - 4:30 PM"
       }
@@ -1317,7 +1317,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Music",
-    school: "School of Fine Arts",
+    school: "SOH",
     averageRating: 8.5
   },
   {
@@ -1325,13 +1325,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Sophie Turner",
-        room: "Room 202",
+        room: "F 202",
         sectionName: "A",
         timeslot: "MWF 9:00 AM - 10:30 AM"
       },
       {
         instructor: "Michael Johnson",
-        room: "Room 302",
+        room: "B 302",
         sectionName: "B",
         timeslot: "TTh 1:00 PM - 2:30 PM"
       }
@@ -1348,7 +1348,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Linguistics",
-    school: "School of Humanities",
+    school: "SOH",
     averageRating: 8.5
   },
   {
@@ -1356,13 +1356,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Nathan Turner",
-        room: "Room 401",
+        room: "CTC 401",
         sectionName: "A",
         timeslot: "MWF 2:00 PM - 3:30 PM"
       },
       {
         instructor: "Emma Johnson",
-        room: "Room 501",
+        room: "B 501",
         sectionName: "B",
         timeslot: "TTh 10:00 AM - 11:30 AM"
       }
@@ -1379,7 +1379,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Environmental Science",
-    school: "School of Sciences and Engineering",
+    school: "SOSE",
     averageRating: 8.5
   },
 
@@ -1412,7 +1412,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["PHYSICS201", "MATH202"],
     department: "Physics",
-    school: "School of Sciences and Engineering",
+    school: "SOSE",
     averageRating: 8.5
   },
   {
@@ -1443,7 +1443,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "Psychology",
-    school: "School of Social Sciences",
+    school: "SOSS",
     averageRating: 8.5
   },
   {
@@ -1474,7 +1474,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["CHEMISTRY101"],
     department: "Chemistry",
-    school: "School of Sciences and Engineering",
+    school: "SOSE",
     averageRating: 8.5
   },
   {
@@ -1482,13 +1482,13 @@ db.courses.insertMany([
     sections: [
       {
         instructor: "Dr. Olivia Turner",
-        room: "Room 202",
+        room: "F 202",
         sectionName: "A",
         timeslot: "MWF 9:00 AM - 10:30 AM"
       },
       {
         instructor: "Dr. Ethan Johnson",
-        room: "Room 302",
+        room: "B 302",
         sectionName: "B",
         timeslot: "TTh 3:00 PM - 4:30 PM"
       }
@@ -1505,7 +1505,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["None"],
     department: "History",
-    school: "School of Humanities",
+    school: "SOH",
     averageRating: 8.5
   },
   {
@@ -1536,7 +1536,7 @@ db.courses.insertMany([
     ],
     prerequisites: ["COMPSCI301"],
     department: "Computer Science",
-    school: "School of Engineering",
+    school: "SOSE",
     averageRating: 8.5
   }
 
@@ -1549,13 +1549,13 @@ db.courses.insertOne({
   sections: [
     {
       instructor: "Lisa Johnson",
-      room: "Art Studio 1",
+      room: "CTC 110",
       sectionName: "A",
       timeslot: "MWF 1:00 PM - 2:30 PM"
     },
     {
       instructor: "David Turner",
-      room: "Art Studio 2",
+      room: "CTC 204",
       sectionName: "B",
       timeslot: "TTh 10:00 AM - 11:30 AM"
     }
@@ -1572,7 +1572,7 @@ db.courses.insertOne({
   ],
   prerequisites: ["None"],
   department: "Fine Arts",
-  school: "School of Arts",
+  school: "SOH",
   averageRating: 8.5
 });
 
