@@ -96,7 +96,7 @@ db.instructors.insertMany([
                 rating: 1
             }
         ]
-    }
+    },
     {
         firstName: "Evelyn Ann",
         lastName: "Macasaet",
@@ -121,7 +121,7 @@ db.instructors.insertMany([
                 rating: 10
             }
         ]
-    }
+    },
     {
         firstName: "Mateo Javier",
         lastName: "Silva",
@@ -551,7 +551,7 @@ db.instructors.insertMany([
             }
         ]
     },
-{
+    {
         "firstName": "Carlos",
         "lastName": "dela Cruz",
         "email": "cdelacruz@ateneo.edu",
