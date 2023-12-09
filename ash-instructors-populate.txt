@@ -1042,7 +1042,7 @@ db.instructors.insertOne({
             "rating": 10
         },
         {
-            "review": "I have to warn you he's always too quiet or too loud in class. Also has a weird fixation on dolphins."
+            "review": "I have to warn you he's always too quiet or too loud in class. Also has a weird fixation on dolphins.",
             "rating": 3
         }
     ]
