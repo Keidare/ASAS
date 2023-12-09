@@ -1585,7 +1585,3 @@ db.courses.deleteOne({ name: "MATH101" });
 
 
 db.courses.find().forEach(printjson);
-
-
-
-
